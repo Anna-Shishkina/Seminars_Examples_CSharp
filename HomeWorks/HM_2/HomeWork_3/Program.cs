@@ -9,12 +9,12 @@ if ((number>=1) & (number<=5))
     Console.WriteLine("Рабочий день");
 }
 
-if (number==6)
+else if (number==6)
 {
     Console.WriteLine("Выходной день");
 }
 
-if (number==7)
+else if (number==7)
 {
     Console.WriteLine("Выходной день");
 }
