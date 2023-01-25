@@ -1,2 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* Задача 42: 
+Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+45 -> 101101
+3 -> 11
+2 -> 10
+*/
+
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());      // пользователь ввел число, оно будет N
+
+string b = "";                                    // создали две переменные
+string k = "";
+
+while (N > 0)                                     // пока число делится на 2 и не равна 0 записываем остаток с конца
+{
+    k = Convert.ToString(N % 2);
+    b = k + b;                                    // это не сложение, а сцепление
+    N = N / 2;
+}
+
+Console.WriteLine(b);
