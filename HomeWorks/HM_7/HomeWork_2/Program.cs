@@ -39,7 +39,7 @@ void FindCoord(int[,] matrix)
     }
     else 
     {
-        Console.WriteLine(matrix[row, column]);
+        Console.WriteLine(matrix[row-1, column-1]);
     }
 }
 
